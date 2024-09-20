@@ -1,10 +1,16 @@
-[gd_scene format=3 uid="uid://cpil0bdqkh3y8"]
+[gd_scene load_steps=3 format=3 uid="uid://cpil0bdqkh3y8"]
+
+[ext_resource type="Shader" path="res://main_scene.gdshader" id="1_kl88h"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qljj8"]
+shader = ExtResource("1_kl88h")
 
 [node name="Main Scene" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_qljj8")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
